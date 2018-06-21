@@ -28,5 +28,5 @@ public interface TaskDao {
     // returns a TaskEntry Object
     // The query for this method should get all the data for that id in the task table
     @Query("SELECT * FROM task WHERE id = :id")
-    void updateTask(int id);
+    TaskEntry loadTaskById(int id);
 }
